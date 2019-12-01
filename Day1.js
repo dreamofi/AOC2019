@@ -7,7 +7,10 @@ console.log(resultFuel1)
 
 //Part2:
 const fuelCalculation = (fuel) => {
-	let totalFuel = (fuel - fuel%3)/3 - 2;	
+	let totalFuel = (fuel - fuel%3)/3 - 2;
+	if(totalFuel < 0){
+		totalFuel = 0;
+	}
 	return totalFuel
 }
 
