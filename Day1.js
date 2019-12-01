@@ -3,6 +3,8 @@ const inputMass = [50350,104487,101866,143582,58497,69981,98300,119291,148489,83
 //Part 1:
 resultFuel1 = inputMass.reduce((acc, curValue) => (acc + ((curValue - curValue%3)/3 -2)),0 )
 
+console.log(resultFuel1)
+
 //Part2:
 const fuelCalculation = (fuel) => {
 	let totalFuel = (fuel - fuel%3)/3 - 2;	
